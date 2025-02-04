@@ -1,0 +1,969 @@
+body{
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+.shipping {
+  background: #ae020df4;
+  color : #fff;
+  width: 100%;
+  height: 30px;
+  padding: 10px 0 0 0;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.head {
+  /*background: #eeee;*/
+  background: #c9efe7;
+  color : #ffffff;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url("./image/welcome-oboi17.jpg");
+  background-repeat: repeat;
+  background-size: 450px;
+  background-position: left;
+  background-attachment: fixed;
+}
+
+.smalLogo{
+  width: 70px;
+}
+.cont {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.column {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.headTwo {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color : #1C442D;
+  margin-top: 10px;
+}
+.headTwoWhite{
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color : #ffffff;
+  margin-bottom: 1px;
+  
+}
+
+.welcomePar{
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+  letter-spacing: 0.3px;
+}
+.soutitre{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color : #1C442D;
+  margin-top: 20px;
+}
+
+
+.about{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color : #1C442D;
+  margin-top: 2px;
+  width : 60%;
+}
+
+.titre{
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color : #1C442D;
+  margin-top: 10px;
+}
+
+
+.myNav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.hiddenNav{
+  display: none;
+
+}
+.secondeNav{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  padding: 5px 5px 15px 5px;
+  background-image: url("./image/welcome-oboi18.jpg");
+  width: 100%;
+  z-index: 100;
+}
+.columnLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.iconBurger {
+  border: none;
+  color: #1c442d;
+  font-size: 18px
+}
+
+.burger {
+  display: none
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 5px 5px 15px 5px;
+  background: #eeee;
+  z-index: 100;
+  animation: glisse .5s ease-out;
+}
+
+.navLeft{
+  display: flex;
+  margin-right: auto;
+  align-items: flex-end;
+  margin-left: 100px;
+}
+.navRight{
+  display: flex;
+  margin-right: 100px;
+  align-items: center;
+}
+
+.link {
+  padding: 10px 20px 5px 20px;
+  text-decoration: none;
+  color : #ffffff;
+  /*color: #424242;*/
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+.link:hover{
+  animation: move  0.3s linear;
+  animation-direction: alternate-reverse;
+}
+
+.linkSmall {
+  padding: 10px 20px 5px 20px;
+  text-decoration: none;
+  color: #424242;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.christmasShopLogo {
+  margin: 20px auto;
+  width :120px;
+  color: #1C442D;
+  animation: logo-scale infinite 5s linear;
+  animation-direction: alternate-reverse;
+}
+
+.christmasShopLogo:hover{
+  color : #1C442D;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .christmasShopLogo {
+    animation: logo-scale infinite 5s linear;
+    animation-direction: alternate-reverse;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-scale {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.09);
+  }
+}
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-1px);
+  }
+}
+@keyframes glisse {
+  from {
+    transform: translateY(-100px);
+    -ms-transform:translateY(-100px);
+    -moz-transform:translateY(-100px); 
+    -webkit-transform:translateY(-100px);
+    -o-transform:translateY(-100px);
+  }
+  
+  to {
+    transform: translateY(0px);
+    -ms-transform:translateY(0px);
+    -moz-transform:translateY(0px); 
+    -webkit-transform:translateY(0px);
+    -o-transform:translateY(0px);
+  }
+}
+
+.back {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #424242;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+
+.change {
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 10px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+
+.all {
+  background: #ae020df4;
+  border: 2px solid #ae020df4;
+}
+.decor {
+  background: #ef5305;
+  border: 2px solid #ef5305;
+}
+.ceramic{
+  background: #3FA796;
+  border: 2px solid #3FA796;
+}
+.solution{
+  background: #3FA796;
+  border: 2px solid #3FA796;
+}
+.ligth{
+  background: #ef5305;
+  border: 2px solid #ef5305;
+}
+
+.tree {
+  background: #1C442D;
+  border: 2px solid #1C442D;
+}
+.soft {
+  background: #1C442D;
+  border: 2px solid #1C442D;
+}
+
+.set{
+  background: #3FA796;
+  border: 2px solid #3FA796;
+}
+.paper{
+  background: #ef5305;
+  border: 2px solid #ef5305; 
+}
+.all:focus, .ceramic:focus, .tree:focus, .decor:focus, .soft:focus, .ligth:focus, .solution:focus, .set:focus, .paper:focus  {
+  background: #ffffff;
+  color: #1c442d;
+}
+.all:focus-visible, .ceramic:focus-visible, .tree:focus-visible, .decor:focus-visible, .soft:focus-visible, .ligth:focus-visible, .solution:focus-visible, .set:focus-visible, .paper:focus-visible {
+  background: #ffffff;
+  color: #1c442d;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.product-card {
+  padding: 5px;
+  /* flex-grow: 1;
+  flex-basis: 10%;*/
+  text-align: center;
+}
+.frameimg {
+  overflow: hidden;
+  height: 260px;
+  width: 260px;
+}
+.frameimg360 {
+  overflow: hidden;
+  height: 360px;
+}
+
+
+.phototoy {
+  height: 260px;
+  width: 260px;
+}
+.phototoy360 {
+  height: 360px;
+  width: 360px;
+
+}
+.phototoy:hover, .phototoy360:hover{
+    animation: toy-scale infinite 4s linear;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes toy-scale {
+  from {
+    transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -moz-transform:scale(1.2); 
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);
+  }
+  to {
+    transform:scale(1.0);
+    -ms-transform:scale(1.0);
+    -moz-transform:scale(1.0); 
+    -webkit-transform:scale(1.0);
+    -o-transform:scale(1.0);
+  }
+}
+
+
+
+.imgToyCart{
+  height: 100px;
+  width: 100px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.toyname {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #424242;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #1C442D;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+.span-toy{
+  font-weight: 500;
+  /*color: #ad424c;*/
+  color: #1c442d;
+  cursor: pointer;
+}
+
+.spanQuantity{
+  font-size: 18px;
+  font-weight: 600;
+  /*color: #ad424c;*/
+  color: #ae020df4;
+  cursor: pointer;
+}
+.spanQuantityCart {
+  font-size: 22px;
+  font-weight: 400;
+  /*color: #ad424c;*/
+  color:#ae020df4;
+  cursor: pointer;
+  
+}
+.discription {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: #424242;
+  font-weight: 300;
+  width: 200px;
+  margin: 3px auto;
+}
+
+
+.btnMore {
+  background: transparent;
+  border: none;
+  color: #1c442d;
+  color: #47663B;
+  cursor: pointer;
+}
+.btnMore:hover, .span-toy:hover {
+  color:#ae020df4;
+}
+
+.btn {
+  display: flex;
+  padding: 10px 0 0 0;
+}
+.addLine {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+.btnQuantity {
+  border: 2px solid #ae020df4;
+  border-radius: 5px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+}
+.footer{
+  background: #1F4529;
+ /* background: #1C442D;*/
+  padding: 20px;
+}
+.footfoot {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footerhead{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.footerlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 20px;
+  border-left: 1px solid white;
+}
+
+
+.footerlink {
+  color: #ffffff;
+  padding: 8px 20px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.green {
+  color: #1C442D;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.footerinput{
+  background: transparent;
+  color: #EED3B1;
+  border: none;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.footerinput::placeholder{
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+.footerBtn{
+  background: transparent;
+  border: none;
+  color : #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.inputplace {
+  display: flex;
+  align-items: flex-start;
+  
+}
+.footerlinks i {
+  animation-name: blink;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+}
+.footerlinks input:focus + i {
+	display: none;
+}
+.line{
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomline{
+  border-bottom: 1px solid white;
+}
+.btnSend{
+  background: #1C442D;
+  border: 2px solid #1C442D;
+  color : #fff;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btnSend:hover {
+  background: transparent;
+  border: 2px solid #1C442D;
+  color : #1C442D;
+}
+.btnSendTwo{
+  background: #1C442D;
+  border: 2px solid #1C442D;
+  color : #fff;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btnSendTwo:hover {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color : #ffffff;
+}
+
+.inputcontact {
+padding: 10px;
+margin: 10px;
+}
+.cartHead {
+  display: flex;
+  justify-content: first baseline;
+  align-items: baseline;
+}
+.headCart{
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color : #1C442D;
+  padding: 10px;
+}
+.right{
+  float: right;
+}
+
+
+
+@keyframes blink {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+.toyCart{
+  padding: 0 10px ;
+  margin-top: 0;
+  align-self: flex-start;
+}
+.lineCart{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.cartBlock {
+  background: #d9e4dd;
+  width: 360px;
+  position: fixed;
+  margin: auto;
+  top: 80px;
+  right: 0;
+  border-radius: 3px;
+  z-index: 99; 
+}
+.fixedCartHead {
+  height: 50px;
+  padding-top: 10px;
+}
+
+.scrollArea {
+  overflow: hidden;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  max-height: 48vh;
+  scrollbar-width: thin;
+}
+
+.cardInfo{
+  width: 80%;
+  margin: auto;
+}
+
+hr{
+  width: 90%;
+  border-bottom: .1px solid #1C442D;
+  background-color: transparent;
+  height: .3px;
+  border-top: none;
+}
+.close{
+  display: none;
+}
+.open {
+  display: block;  
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.marginVingt{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.marginZero{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 2px 10px;
+}
+
+
+.welcomePage{
+  background-image: url("./image/welcome-oboi1.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media all and (max-width : 1030px) {
+  
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .sticky{
+    padding: 0px;
+  }
+  nav , .secondeNav{
+    padding: 0px;
+    margin: 0;
+  }
+  .burger{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+  
+}
+
+@media all and (max-width : 1000px) {
+  .column {
+    flex-direction: column;
+  }
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .myNav, .secondeNav, .navLeft {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navRight{
+    align-self: center;
+    margin-right: 0;
+  }
+  .navLeft{
+    align-self: center;
+    align-items: center;
+    margin: 0;
+  }
+  .columnLinks{
+    flex-direction: column;
+}
+nav , .secondeNav{
+  padding: 10px 0px;
+  margin: 0;
+}
+.burger {
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 40px;
+}
+.sticky {
+  padding: 0px;
+  }
+.soutitre, .about {
+  width: 80%;
+  }
+  .footerhead{
+    flex-direction: column;
+  }
+  .footerlinks{
+    border-left: none;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+  }
+  .cartBlock{
+    width: 90%;
+    top: 210px;
+  }
+
+  .scrollArea{
+    max-height: 35vh;
+  }
+  .paddingVingt{
+    padding: 10px 0;
+    margin-left: 20px;
+  }
+    .welcomePage{
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: unset;
+  }
+}
+
+@media all and (max-width : 500px) {
+  .column {
+    flex-direction: column;
+  }
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .myNav, .secondeNav, .navLeft {
+    flex-direction: column;
+  }
+  nav , .secondeNav{
+    padding: 0;
+  }
+  .headTwoWhite {
+    font-size: 45px;
+  }
+  .footerlinks, .footerlink{
+    padding: 20px 0px;
+  }
+  .navLeft{
+    align-self: center;
+    align-items: center;
+    margin: 0;
+  }
+  .navRight{
+    align-self: center;
+    margin-right: 0;
+  }
+  .columnLinks{
+    flex-direction: column;
+}
+.burger{
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+  .sticky{
+    padding: 0px;
+  }
+  .soutitre, .about {
+    width: 80%;
+  }
+  .cartBlock{
+    width: 95%;
+    top:200px;
+  }
+  
+  .scrollArea{
+    max-height: 25vh;
+  }
+}
+@media all and (max-width : 360px) {
+  .column {
+    flex-direction: column;
+  }
+  
+  .headTwoWhite {
+    font-size: 40px;
+  }
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .myNav, .secondeNav, .navLeft {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navLeft{
+    align-self: center;
+    align-items: center;
+    margin: 0;
+  }
+  .navRight{
+    align-self: center;
+    margin-right: 0;
+  }
+  .sticky{
+    padding: 0px;
+  }
+  nav , .secondeNav{
+    padding: 0;
+  }
+  .burger{
+    display: block;
+  }
+  .footerlinks, .footerlink{
+    padding: 20px 0px;
+  }
+  .frameimg360, .phototoy360{
+    width: 100%;
+  }
+  .soutitre, .about {
+    width: 80%;
+  }
+  .cartBlock{
+    top:100px;
+    width: 100%;
+  }
+  .scrollArea{
+    height: 35vh;
+  }
+}
+@media all and (max-width : 285px) {
+  .column {
+    flex-direction: column;
+  }
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .myNav, .secondeNav, .navLeft {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navLeft{
+    align-self: center;
+    align-items: center;
+    margin: 0;
+  }
+  .navRight{
+    align-self: center;
+    margin-right: 0;
+  }
+  nav , .secondeNav{
+    padding: 0;
+  }
+  .burger{
+    display: block;
+    top:22px;
+  }
+  .footerlinks, .footerlink{
+    padding: 20px 0px;
+  }
+  .sticky{
+    padding: 0px;
+  }
+  .frameimg360, .phototoy360{
+    width: 100%;
+  }
+  .soutitre, .about {
+    width: 60%;
+  }
+  .cartBlock{
+    top:100px;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .scrollArea{
+    max-height: 35vh;
+  }
+  .paddingVingt{
+    padding: 10px 0 0 10px;
+  }
+  .fixedCartHead{
+    width: 100%;
+    padding: 10px 0 0 10px;;
+  }
+  .secondeNav{
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+}
+
+
