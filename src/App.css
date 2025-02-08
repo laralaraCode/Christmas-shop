@@ -696,7 +696,7 @@ hr{
 
 
 .welcomePage{
-  background-image: url("./image/welcome-oboi1.jpg");
+  background-image: url("/image/welcome-oboi1.jpg");
   height: 70vh;
   background-size: cover;
   background-position: bottom;
